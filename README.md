@@ -13,5 +13,7 @@ In this project, I used **Python** to explore data related to bike share systems
 There were **3** files used for the project: __chicago.csv, new_york_city.csv, and washington.csv.__
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+**Used links:**
+https://stackoverflow.com/
+https://pandas.pydata.org/docs
 
