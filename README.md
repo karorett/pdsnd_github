@@ -7,7 +7,7 @@ Project **Explore US Bikeshare Data** was done and presented **09-05-2023**.
 The Project Title is **Explore US Bikeshare Data**
 
 ### Description
-Describe what your project is about and what it does
+In this project, I used **Python** to explore data related to bike share systems for the three major cities in the U.S. - _Chicago, New York City, and Washington._ I wrote the code to import the data and answer questions about it by computing descriptive statistics.
 
 ### Files used
 Include the files used
