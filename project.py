@@ -126,7 +126,7 @@ def time_stats(df):
     most_common_hour = df['hour'].mode()[0]
     print('The most common hour is:', most_common_hour)
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % round(time.time() - start_time,1))
     print('-'*40) 
 
 def station_stats(df):
@@ -151,7 +151,7 @@ def station_stats(df):
     most_frequent_combtrip = start_end_station.loc[start_end_station['count'].idxmax()]   
     print('The most frequent combination of Start Station and End Station trip is from',most_frequent_combtrip['Start Station'],' to ',most_frequent_combtrip['End Station'],' with ',most_frequent_combtrip['count'],' trips.')
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % round(time.time() - start_time,1))
     print('-'*40)
 
 def trip_duration_stats(df):
@@ -168,7 +168,7 @@ def trip_duration_stats(df):
     mean_travel_time = df['Trip Duration'].mean()
     print('Average travel time: ',mean_travel_time, ' seconds')
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % round(time.time() - start_time,1))
     print('-'*40)
 
 def user_stats(df, city):
@@ -199,10 +199,11 @@ def user_stats(df, city):
         most_common_birth_year = without_zeros ['Birth Year'].mode()[0]
         print('Most common birth year:', most_common_birth_year)
     
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % round(time.time() - start_time,1))
     print('-'*40)
 
 def view_data(df):
+    """ Display statistics on the 5 rows of individual trip data only"""
     validInput = False
     printRows = False
     while not validInput == True:
