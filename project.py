@@ -203,6 +203,7 @@ def user_stats(df, city):
     print('-'*40)
 
 def view_data(df):
+    """ Display statistics on the 5 rows of individual trip data only"""
     validInput = False
     printRows = False
     while not validInput == True:
